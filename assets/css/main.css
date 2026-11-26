@@ -455,6 +455,34 @@ NEW = r"""/* ---------- 11b. Buy box (product page configurator) ---------- */
 .price-ref > summary::after { content: "+"; font-size: 1.1rem; color: var(--navy); }
 .price-ref[open] > summary::after { content: "\2212"; }
 
+/* ---------- 11e. Hero buy box (product) ---------- */
+.hero-buy {
+  margin-top: 1.35rem; background: #fff; border: 1px solid var(--line);
+  border-radius: var(--radius); padding: .95rem 1rem; box-shadow: var(--shadow-sm);
+}
+.hero-buy-row {
+  display: grid; grid-template-columns: minmax(0, 1fr) 128px; gap: .65rem; align-items: end;
+}
+.hero-buy .field { margin: 0; }
+.hero-buy .field label {
+  font-size: .66rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted-2);
+}
+.hero-buy select { height: 42px; font-size: .88rem; padding: .45rem .6rem; }
+.hero-buy .stepper { height: 42px; }
+.hero-buy .stepper button { width: 34px; }
+.hero-buy .stepper input { min-width: 34px; font-size: .9rem; }
+.hero-buy-bottom {
+  display: flex; align-items: center; justify-content: space-between; gap: .8rem; margin-top: .8rem;
+}
+.hero-buy .buy-total span { display: block; font-size: .62rem; }
+.hero-buy .buy-total b { font-size: 1.45rem; }
+.hero-buy .buy-total small { font-size: .7rem; }
+.hero-buy-actions { display: flex; gap: .45rem; }
+.hero-buy-actions .btn { padding: .68rem .9rem; font-size: .86rem; }
+.hero-buy .buy-status { margin: .7rem 0 0; font-size: .82rem; padding: .55rem .7rem; }
+.hero-note { margin-top: .85rem; }
+.hero-note a { font-weight: 600; white-space: nowrap; }
+
 /* ---------- 11c. Inquiry list page ---------- */
 .cart-link {
   display: inline-flex; align-items: center; gap: .4rem; font-size: .85rem; font-weight: 600;
@@ -498,6 +526,12 @@ NEW = r"""/* ---------- 11b. Buy box (product page configurator) ---------- */
 /* ---------- 11d. Mobile overrides for the buy box ---------- */
 @media (max-width: 760px) {
   .buy-grid { grid-template-columns: 1fr; gap: .85rem; }
+  .hero-buy-row { grid-template-columns: 1fr; }
+  .hero-buy .stepper { max-width: 168px; }
+  .hero-buy-bottom { flex-direction: column; align-items: stretch; gap: .7rem; }
+  .hero-buy .buy-total { flex-direction: row; align-items: baseline; gap: .5rem; }
+  .hero-buy .buy-total span { display: none; }
+  .hero-buy-actions .btn { flex: 1 1 auto; justify-content: center; }
   .buy-total { flex-direction: row; align-items: baseline; gap: .6rem; }
   .buy-total b { font-size: 1.5rem; }
   .buy-actions .btn { flex: 1 1 100%; justify-content: center; }
