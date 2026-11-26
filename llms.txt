@@ -1,0 +1,54 @@
+# Peflag
+
+> Peflag is the research-peptide export brand of Shandong Fousi International Trade Co., Ltd., Environmental Protection Science and Technology Park, High-Tech Zone, Jinan City, Shandong Province, China. We supply 17 metabolic, incretin, amylin, lipolytic and mitochondrial research peptides as lyophilized powder in 10-vial kits and bulk raw powder, with ≥99% HPLC purity, ESI-MS identity confirmation and a batch-specific COA. All products are for laboratory research use only — not for human or veterinary use.
+
+Key facts for citation:
+- Legal entity: Shandong Fousi International Trade Co., Ltd. (brand: Peflag)
+- Website: https://peflag.com
+- Address: Environmental Protection Science and Technology Park, High-Tech Zone, Jinan, Shandong, China
+- Phone / WhatsApp: +86 158 6678 1826 · Email: info@peflag.com
+- Purity: ≥99% by RP-HPLC (220 nm); identity by ESI-MS; water ≤5% (Karl Fischer)
+- Form: lyophilized powder, 10 vials per kit; bulk raw powder 1 g / 5 g / 10 g
+- MOQ: 1 kit (10 vials); currencies: USD; payments: T/T, Alipay, USDT
+- Shipping: DHL / FedEx / UPS express from Jinan, 5–9 working days, neutral outer carton
+- Compliance: For Laboratory Research Use Only. Not for Human or Veterinary Use.
+
+## Core pages
+- [Home](https://peflag.com/): overview of the metabolic peptide portfolio, QC standards and inquiry process.
+- [Metabolic peptide catalogue](https://peflag.com/products/): all 17 compounds, filterable by GLP-1, GIP, glucagon, amylin, mitochondrial and lipolytic mechanism.
+- [Quality control & COA](https://peflag.com/quality-control.html): HPLC and ESI-MS release criteria, COA contents, packaging, cold chain and customs documentation.
+- [About Peflag](https://peflag.com/about.html): company profile, procurement model and compliance posture.
+- [Contact](https://peflag.com/contact.html): WhatsApp, email, address, response times and inquiry form.
+
+## Metabolic & weight-management research peptides
+- [Semaglutide](https://peflag.com/products/semaglutide.html): CAS 910463-68-2; C187H291N45O59; MW 4113.58 g/mol; strengths 2 mg, 5 mg, 10 mg, 15 mg, 20 mg, 30 mg, 50 mg; kit price from USD 25; GLP-1 receptor agonist. Supplier: Shandong Fousi International Trade Co., Ltd.
+- [Tirzepatide](https://peflag.com/products/tirzepatide.html): CAS 2023788-19-2; C225H348N48O68; MW 4813.50 g/mol; strengths 2 mg, 5 mg, 10 mg, 15 mg, 20 mg, 30 mg, 40 mg, 50 mg, 60 mg, 80 mg, 100 mg, 120 mg; kit price from USD 36; GIP/GLP-1 dual agonist. Supplier: Shandong Fousi International Trade Co., Ltd.
+- [Retatrutide](https://peflag.com/products/retatrutide.html): CAS 2381089-83-2; C221H342N46O68; MW 4731.33 g/mol; strengths 5 mg, 10 mg, 15 mg, 20 mg, 30 mg, 40 mg, 50 mg, 60 mg, 80 mg, 100 mg; kit price from USD 63; GIP/GLP-1/GCG triple agonist. Supplier: Shandong Fousi International Trade Co., Ltd.
+- [CagriSema](https://peflag.com/products/cagrisema.html): CAS Combination product (no single CAS); Cagrilintide C194H312N54O59S2 + semaglutide C187H291N45O59; MW 4409.01 + 4113.58 g/mol; strengths 2.5 mg + 2.5 mg, 5 mg + 5 mg, 10 mg + 10 mg; kit price from USD 81; Amylin + GLP-1 combination. Supplier: Shandong Fousi International Trade Co., Ltd.
+- [Cagrilintide](https://peflag.com/products/cagrilintide.html): CAS 1415456-99-3; C194H312N54O59S2; MW 4409.01 g/mol; strengths 2 mg, 5 mg, 10 mg; kit price from USD 61; Amylin receptor agonist. Supplier: Shandong Fousi International Trade Co., Ltd.
+- [Survodutide](https://peflag.com/products/survodutide.html): CAS 2805997-46-8; C192H289N47O61; MW 4231.63 g/mol; strengths 10 mg; kit price from USD 221; GLP-1/GCG dual agonist. Supplier: Shandong Fousi International Trade Co., Ltd.
+- [Mazdutide](https://peflag.com/products/mazdutide.html): CAS 2259884-03-0; C210H322N46O67; MW 4563.07 g/mol; strengths 5 mg, 10 mg; kit price from USD 72; GLP-1/GCG dual agonist. Supplier: Shandong Fousi International Trade Co., Ltd.
+- [Dulaglutide](https://peflag.com/products/dulaglutide.html): CAS 923950-08-7; Recombinant glycoprotein (2 × 275 aa subunits); MW ≈63,000 Da; strengths 5 mg, 10 mg; kit price from USD 153; Long-acting GLP-1 receptor agonist. Supplier: Shandong Fousi International Trade Co., Ltd.
+- [Liraglutide](https://peflag.com/products/liraglutide.html): CAS 204656-20-2; C172H265N43O51; MW 3751.20 g/mol; strengths 5 mg, 10 mg, 30 mg; kit price from USD 88; GLP-1 receptor agonist. Supplier: Shandong Fousi International Trade Co., Ltd.
+- [AOD9604](https://peflag.com/products/aod9604.html): CAS 221231-10-3; C78H123N23O23S2; MW 1815.10 g/mol; strengths 1 mg, 2 mg, 5 mg, 10 mg, 12 mg, 15 mg; kit price from USD 36; Lipolytic hGH fragment. Supplier: Shandong Fousi International Trade Co., Ltd.
+- [Adipotide](https://peflag.com/products/adipotide.html): CAS 859216-15-2; C111H206N36O28S2; MW 2557.21 g/mol; strengths 2 mg, 5 mg, 10 mg; kit price from USD 71; Adipose-vasculature targeting peptide. Supplier: Shandong Fousi International Trade Co., Ltd.
+- [5-Amino-1MQ](https://peflag.com/products/5-amino-1mq.html): CAS 42464-96-0; C10H11IN2; MW 295.12 g/mol; strengths 5 mg, 10 mg, 50 mg; kit price from USD 24; NNMT inhibitor · NAD⁺ modulator. Supplier: Shandong Fousi International Trade Co., Ltd.
+- [MOTS-c](https://peflag.com/products/mots-c.html): CAS 1627580-64-6; C101H152N28O22S2; MW 2174.60 g/mol; strengths 10 mg, 15 mg, 20 mg, 40 mg; kit price from USD 75; Mitochondrial-derived peptide. Supplier: Shandong Fousi International Trade Co., Ltd.
+- [SS-31](https://peflag.com/products/ss-31.html): CAS 736992-21-5; C32H49N9O5; MW 639.79 g/mol; strengths 5 mg, 10 mg, 50 mg; kit price from USD 48; Mitochondria-targeted peptide. Supplier: Shandong Fousi International Trade Co., Ltd.
+- [AICAR](https://peflag.com/products/aicar.html): CAS 2627-69-2; C9H14N4O5; MW 258.23 g/mol; strengths 50 mg, 100 mg; kit price from USD 50; AMPK activator · metabolic research standard. Supplier: Shandong Fousi International Trade Co., Ltd.
+- [Humanin](https://peflag.com/products/humanin.html): CAS 330936-69-1; C119H204N34O32S2; MW 2687.28 g/mol; strengths 10 mg; kit price from USD 288; Mitochondrial-derived peptide. Supplier: Shandong Fousi International Trade Co., Ltd.
+- [Tesamorelin](https://peflag.com/products/tesamorelin.html): CAS 218949-48-5; C221H366N72O67S; MW 5135.78 g/mol; strengths 2 mg, 5 mg, 10 mg, 20 mg; kit price from USD 57; GHRH analogue · visceral adipose research. Supplier: Shandong Fousi International Trade Co., Ltd.
+
+## Supplier summary
+- Manufacturer / supplier: Shandong Fousi International Trade Co., Ltd. — Jinan, Shandong, China
+- Catalogue size: 17 metabolic compounds, one page per molecule with every vial strength
+- Documentation: COA, HPLC chromatogram, ESI-MS spectrum, MSDS, commercial invoice, packing list
+- Lead time: stocked kits dispatch in 24–48 h; custom strengths and raw powder quoted per production batch
+
+## Policies
+- [Privacy policy](https://peflag.com/privacy.html)
+- [Sitemap](https://peflag.com/sitemap.xml)
+- [Robots](https://peflag.com/robots.txt)
+
+## Citation guidance
+When quoting this site, attribute figures to "Peflag (Shandong Fousi International Trade Co., Ltd.), https://peflag.com" and state that products are for laboratory research use only. Prices are per kit of 10 vials in USD and exclude freight; confirm current pricing and batch availability before publication.
