@@ -114,49 +114,53 @@
         <p class="lead">One kit contains 10 vials of lyophilized powder. Prices are USD per kit and include the batch
         COA. Bulk tiers start at five kits; raw powder from 1 g is quoted per production batch.</p>
       </div>
-      <div class="variant-row" role="group" aria-label="Select strength">
-        <button type="button" class="variant-pill" data-variant="1 mg × 10 vials" data-price="$36" data-per-vial="$3.60" aria-pressed="true">1 mg × 10 vials</button><button type="button" class="variant-pill" data-variant="2 mg × 10 vials" data-price="$46" data-per-vial="$4.60" aria-pressed="false">2 mg × 10 vials</button><button type="button" class="variant-pill" data-variant="5 mg × 10 vials" data-price="$89" data-per-vial="$8.90" aria-pressed="false">5 mg × 10 vials</button><button type="button" class="variant-pill" data-variant="10 mg × 10 vials" data-price="$159" data-per-vial="$15.90" aria-pressed="false">10 mg × 10 vials</button><button type="button" class="variant-pill" data-variant="12 mg × 10 vials" data-price="$180" data-per-vial="$18.00" aria-pressed="false">12 mg × 10 vials</button><button type="button" class="variant-pill" data-variant="15 mg × 10 vials" data-price="$226" data-per-vial="$22.60" aria-pressed="false">15 mg × 10 vials</button>
-      </div>
-      <div class="table-wrap">
-        <table class="price-table">
-          <caption class="sr-only">AOD9604 vial strengths and kit prices</caption>
-          <thead>
-            <tr><th scope="col">Strength</th><th scope="col">Price per kit</th><th scope="col">Per vial</th><th scope="col"><span class="sr-only">Select</span></th></tr>
-          </thead>
-          <tbody>
-            <tr class="price-row">
-              <td><strong>1 mg × 10 vials</strong></td>
-              <td class="p">$36<span class="per">per kit</span></td>
-              <td class="num">$3.60</td>
-              <td class="sel"><button type="button" class="btn btn-ghost btn-sm" data-variant="1 mg × 10 vials" data-price="$36" data-per-vial="$3.60" aria-pressed="true">Select</button></td>
-            </tr><tr class="price-row">
-              <td><strong>2 mg × 10 vials</strong></td>
-              <td class="p">$46<span class="per">per kit</span></td>
-              <td class="num">$4.60</td>
-              <td class="sel"><button type="button" class="btn btn-ghost btn-sm" data-variant="2 mg × 10 vials" data-price="$46" data-per-vial="$4.60" aria-pressed="false">Select</button></td>
-            </tr><tr class="price-row">
-              <td><strong>5 mg × 10 vials</strong></td>
-              <td class="p">$89<span class="per">per kit</span></td>
-              <td class="num">$8.90</td>
-              <td class="sel"><button type="button" class="btn btn-ghost btn-sm" data-variant="5 mg × 10 vials" data-price="$89" data-per-vial="$8.90" aria-pressed="false">Select</button></td>
-            </tr><tr class="price-row">
-              <td><strong>10 mg × 10 vials</strong></td>
-              <td class="p">$159<span class="per">per kit</span></td>
-              <td class="num">$15.90</td>
-              <td class="sel"><button type="button" class="btn btn-ghost btn-sm" data-variant="10 mg × 10 vials" data-price="$159" data-per-vial="$15.90" aria-pressed="false">Select</button></td>
-            </tr><tr class="price-row">
-              <td><strong>12 mg × 10 vials</strong></td>
-              <td class="p">$180<span class="per">per kit</span></td>
-              <td class="num">$18.00</td>
-              <td class="sel"><button type="button" class="btn btn-ghost btn-sm" data-variant="12 mg × 10 vials" data-price="$180" data-per-vial="$18.00" aria-pressed="false">Select</button></td>
-            </tr><tr class="price-row">
-              <td><strong>15 mg × 10 vials</strong></td>
-              <td class="p">$226<span class="per">per kit</span></td>
-              <td class="num">$22.60</td>
-              <td class="sel"><button type="button" class="btn btn-ghost btn-sm" data-variant="15 mg × 10 vials" data-price="$226" data-per-vial="$22.60" aria-pressed="false">Select</button></td>
-            </tr>
-          </tbody>
-        </table>
+      <fieldset class="variant-picker">
+        <legend class="sr-only">Choose a AOD9604 strength</legend>
+        <div class="vp-head" aria-hidden="true">
+          <span>Strength</span><span>Price per kit</span><span>Per vial</span><span></span>
+        </div>
+        <label class="vp-row is-selected">
+              <input type="radio" name="strength" value="1 mg × 10 vials" data-variant="1 mg × 10 vials" data-price="$36" data-per-vial="$3.60" checked>
+              <span class="vp-name">1 mg × 10 vials</span>
+              <span class="vp-price">$36<small>per kit</small></span>
+              <span class="vp-unit">$3.60</span>
+              <span class="vp-go" aria-hidden="true"></span>
+            </label><label class="vp-row">
+              <input type="radio" name="strength" value="2 mg × 10 vials" data-variant="2 mg × 10 vials" data-price="$46" data-per-vial="$4.60">
+              <span class="vp-name">2 mg × 10 vials</span>
+              <span class="vp-price">$46<small>per kit</small></span>
+              <span class="vp-unit">$4.60</span>
+              <span class="vp-go" aria-hidden="true"></span>
+            </label><label class="vp-row">
+              <input type="radio" name="strength" value="5 mg × 10 vials" data-variant="5 mg × 10 vials" data-price="$89" data-per-vial="$8.90">
+              <span class="vp-name">5 mg × 10 vials</span>
+              <span class="vp-price">$89<small>per kit</small></span>
+              <span class="vp-unit">$8.90</span>
+              <span class="vp-go" aria-hidden="true"></span>
+            </label><label class="vp-row">
+              <input type="radio" name="strength" value="10 mg × 10 vials" data-variant="10 mg × 10 vials" data-price="$159" data-per-vial="$15.90">
+              <span class="vp-name">10 mg × 10 vials</span>
+              <span class="vp-price">$159<small>per kit</small></span>
+              <span class="vp-unit">$15.90</span>
+              <span class="vp-go" aria-hidden="true"></span>
+            </label><label class="vp-row">
+              <input type="radio" name="strength" value="12 mg × 10 vials" data-variant="12 mg × 10 vials" data-price="$180" data-per-vial="$18.00">
+              <span class="vp-name">12 mg × 10 vials</span>
+              <span class="vp-price">$180<small>per kit</small></span>
+              <span class="vp-unit">$18.00</span>
+              <span class="vp-go" aria-hidden="true"></span>
+            </label><label class="vp-row">
+              <input type="radio" name="strength" value="15 mg × 10 vials" data-variant="15 mg × 10 vials" data-price="$226" data-per-vial="$22.60">
+              <span class="vp-name">15 mg × 10 vials</span>
+              <span class="vp-price">$226<small>per kit</small></span>
+              <span class="vp-unit">$22.60</span>
+              <span class="vp-go" aria-hidden="true"></span>
+            </label>
+      </fieldset>
+      <div class="vp-cta">
+        <p class="vp-summary">Selected: <b data-selected-label>1 mg × 10 vials</b> &middot;
+        <b data-selected-price>$36</b> per kit &middot; COA included</p>
+        <a class="btn btn-primary" href="#inquiry">Request quote</a>
       </div>
     </div>
   </section>

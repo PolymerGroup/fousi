@@ -114,24 +114,23 @@
         <p class="lead">One kit contains 10 vials of lyophilized powder. Prices are USD per kit and include the batch
         COA. Bulk tiers start at five kits; raw powder from 1 g is quoted per production batch.</p>
       </div>
-      <div class="variant-row" role="group" aria-label="Select strength">
-        <button type="button" class="variant-pill" data-variant="10 mg × 10 vials" data-price="$221" data-per-vial="$22.10" aria-pressed="true">10 mg × 10 vials</button>
-      </div>
-      <div class="table-wrap">
-        <table class="price-table">
-          <caption class="sr-only">Survodutide vial strengths and kit prices</caption>
-          <thead>
-            <tr><th scope="col">Strength</th><th scope="col">Price per kit</th><th scope="col">Per vial</th><th scope="col"><span class="sr-only">Select</span></th></tr>
-          </thead>
-          <tbody>
-            <tr class="price-row">
-              <td><strong>10 mg × 10 vials</strong></td>
-              <td class="p">$221<span class="per">per kit</span></td>
-              <td class="num">$22.10</td>
-              <td class="sel"><button type="button" class="btn btn-ghost btn-sm" data-variant="10 mg × 10 vials" data-price="$221" data-per-vial="$22.10" aria-pressed="true">Select</button></td>
-            </tr>
-          </tbody>
-        </table>
+      <fieldset class="variant-picker">
+        <legend class="sr-only">Choose a Survodutide strength</legend>
+        <div class="vp-head" aria-hidden="true">
+          <span>Strength</span><span>Price per kit</span><span>Per vial</span><span></span>
+        </div>
+        <label class="vp-row is-selected">
+              <input type="radio" name="strength" value="10 mg × 10 vials" data-variant="10 mg × 10 vials" data-price="$221" data-per-vial="$22.10" checked>
+              <span class="vp-name">10 mg × 10 vials</span>
+              <span class="vp-price">$221<small>per kit</small></span>
+              <span class="vp-unit">$22.10</span>
+              <span class="vp-go" aria-hidden="true"></span>
+            </label>
+      </fieldset>
+      <div class="vp-cta">
+        <p class="vp-summary">Selected: <b data-selected-label>10 mg × 10 vials</b> &middot;
+        <b data-selected-price>$221</b> per kit &middot; COA included</p>
+        <a class="btn btn-primary" href="#inquiry">Request quote</a>
       </div>
     </div>
   </section>

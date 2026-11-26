@@ -114,29 +114,29 @@
         <p class="lead">One kit contains 10 vials of lyophilized powder. Prices are USD per kit and include the batch
         COA. Bulk tiers start at five kits; raw powder from 1 g is quoted per production batch.</p>
       </div>
-      <div class="variant-row" role="group" aria-label="Select strength">
-        <button type="button" class="variant-pill" data-variant="50 mg" data-price="$50" data-per-vial="$5.00" aria-pressed="true">50 mg</button><button type="button" class="variant-pill" data-variant="100 mg" data-price="$86" data-per-vial="$8.60" aria-pressed="false">100 mg</button>
-      </div>
-      <div class="table-wrap">
-        <table class="price-table">
-          <caption class="sr-only">AICAR vial strengths and kit prices</caption>
-          <thead>
-            <tr><th scope="col">Strength</th><th scope="col">Price per kit</th><th scope="col">Per vial</th><th scope="col"><span class="sr-only">Select</span></th></tr>
-          </thead>
-          <tbody>
-            <tr class="price-row">
-              <td><strong>50 mg</strong></td>
-              <td class="p">$50<span class="per">per kit</span></td>
-              <td class="num">$5.00</td>
-              <td class="sel"><button type="button" class="btn btn-ghost btn-sm" data-variant="50 mg" data-price="$50" data-per-vial="$5.00" aria-pressed="true">Select</button></td>
-            </tr><tr class="price-row">
-              <td><strong>100 mg</strong></td>
-              <td class="p">$86<span class="per">per kit</span></td>
-              <td class="num">$8.60</td>
-              <td class="sel"><button type="button" class="btn btn-ghost btn-sm" data-variant="100 mg" data-price="$86" data-per-vial="$8.60" aria-pressed="false">Select</button></td>
-            </tr>
-          </tbody>
-        </table>
+      <fieldset class="variant-picker">
+        <legend class="sr-only">Choose a AICAR strength</legend>
+        <div class="vp-head" aria-hidden="true">
+          <span>Strength</span><span>Price per kit</span><span>Per vial</span><span></span>
+        </div>
+        <label class="vp-row is-selected">
+              <input type="radio" name="strength" value="50 mg" data-variant="50 mg" data-price="$50" data-per-vial="$5.00" checked>
+              <span class="vp-name">50 mg</span>
+              <span class="vp-price">$50<small>per kit</small></span>
+              <span class="vp-unit">$5.00</span>
+              <span class="vp-go" aria-hidden="true"></span>
+            </label><label class="vp-row">
+              <input type="radio" name="strength" value="100 mg" data-variant="100 mg" data-price="$86" data-per-vial="$8.60">
+              <span class="vp-name">100 mg</span>
+              <span class="vp-price">$86<small>per kit</small></span>
+              <span class="vp-unit">$8.60</span>
+              <span class="vp-go" aria-hidden="true"></span>
+            </label>
+      </fieldset>
+      <div class="vp-cta">
+        <p class="vp-summary">Selected: <b data-selected-label>50 mg</b> &middot;
+        <b data-selected-price>$50</b> per kit &middot; COA included</p>
+        <a class="btn btn-primary" href="#inquiry">Request quote</a>
       </div>
     </div>
   </section>

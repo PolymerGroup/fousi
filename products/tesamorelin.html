@@ -114,39 +114,41 @@
         <p class="lead">One kit contains 10 vials of lyophilized powder. Prices are USD per kit and include the batch
         COA. Bulk tiers start at five kits; raw powder from 1 g is quoted per production batch.</p>
       </div>
-      <div class="variant-row" role="group" aria-label="Select strength">
-        <button type="button" class="variant-pill" data-variant="2 mg × 10 vials" data-price="$57" data-per-vial="$5.70" aria-pressed="true">2 mg × 10 vials</button><button type="button" class="variant-pill" data-variant="5 mg × 10 vials" data-price="$108" data-per-vial="$10.80" aria-pressed="false">5 mg × 10 vials</button><button type="button" class="variant-pill" data-variant="10 mg × 10 vials" data-price="$205" data-per-vial="$20.50" aria-pressed="false">10 mg × 10 vials</button><button type="button" class="variant-pill" data-variant="20 mg × 10 vials" data-price="$355" data-per-vial="$35.50" aria-pressed="false">20 mg × 10 vials</button>
-      </div>
-      <div class="table-wrap">
-        <table class="price-table">
-          <caption class="sr-only">Tesamorelin vial strengths and kit prices</caption>
-          <thead>
-            <tr><th scope="col">Strength</th><th scope="col">Price per kit</th><th scope="col">Per vial</th><th scope="col"><span class="sr-only">Select</span></th></tr>
-          </thead>
-          <tbody>
-            <tr class="price-row">
-              <td><strong>2 mg × 10 vials</strong></td>
-              <td class="p">$57<span class="per">per kit</span></td>
-              <td class="num">$5.70</td>
-              <td class="sel"><button type="button" class="btn btn-ghost btn-sm" data-variant="2 mg × 10 vials" data-price="$57" data-per-vial="$5.70" aria-pressed="true">Select</button></td>
-            </tr><tr class="price-row">
-              <td><strong>5 mg × 10 vials</strong></td>
-              <td class="p">$108<span class="per">per kit</span></td>
-              <td class="num">$10.80</td>
-              <td class="sel"><button type="button" class="btn btn-ghost btn-sm" data-variant="5 mg × 10 vials" data-price="$108" data-per-vial="$10.80" aria-pressed="false">Select</button></td>
-            </tr><tr class="price-row">
-              <td><strong>10 mg × 10 vials</strong></td>
-              <td class="p">$205<span class="per">per kit</span></td>
-              <td class="num">$20.50</td>
-              <td class="sel"><button type="button" class="btn btn-ghost btn-sm" data-variant="10 mg × 10 vials" data-price="$205" data-per-vial="$20.50" aria-pressed="false">Select</button></td>
-            </tr><tr class="price-row">
-              <td><strong>20 mg × 10 vials</strong></td>
-              <td class="p">$355<span class="per">per kit</span></td>
-              <td class="num">$35.50</td>
-              <td class="sel"><button type="button" class="btn btn-ghost btn-sm" data-variant="20 mg × 10 vials" data-price="$355" data-per-vial="$35.50" aria-pressed="false">Select</button></td>
-            </tr>
-          </tbody>
-        </table>
+      <fieldset class="variant-picker">
+        <legend class="sr-only">Choose a Tesamorelin strength</legend>
+        <div class="vp-head" aria-hidden="true">
+          <span>Strength</span><span>Price per kit</span><span>Per vial</span><span></span>
+        </div>
+        <label class="vp-row is-selected">
+              <input type="radio" name="strength" value="2 mg × 10 vials" data-variant="2 mg × 10 vials" data-price="$57" data-per-vial="$5.70" checked>
+              <span class="vp-name">2 mg × 10 vials</span>
+              <span class="vp-price">$57<small>per kit</small></span>
+              <span class="vp-unit">$5.70</span>
+              <span class="vp-go" aria-hidden="true"></span>
+            </label><label class="vp-row">
+              <input type="radio" name="strength" value="5 mg × 10 vials" data-variant="5 mg × 10 vials" data-price="$108" data-per-vial="$10.80">
+              <span class="vp-name">5 mg × 10 vials</span>
+              <span class="vp-price">$108<small>per kit</small></span>
+              <span class="vp-unit">$10.80</span>
+              <span class="vp-go" aria-hidden="true"></span>
+            </label><label class="vp-row">
+              <input type="radio" name="strength" value="10 mg × 10 vials" data-variant="10 mg × 10 vials" data-price="$205" data-per-vial="$20.50">
+              <span class="vp-name">10 mg × 10 vials</span>
+              <span class="vp-price">$205<small>per kit</small></span>
+              <span class="vp-unit">$20.50</span>
+              <span class="vp-go" aria-hidden="true"></span>
+            </label><label class="vp-row">
+              <input type="radio" name="strength" value="20 mg × 10 vials" data-variant="20 mg × 10 vials" data-price="$355" data-per-vial="$35.50">
+              <span class="vp-name">20 mg × 10 vials</span>
+              <span class="vp-price">$355<small>per kit</small></span>
+              <span class="vp-unit">$35.50</span>
+              <span class="vp-go" aria-hidden="true"></span>
+            </label>
+      </fieldset>
+      <div class="vp-cta">
+        <p class="vp-summary">Selected: <b data-selected-label>2 mg × 10 vials</b> &middot;
+        <b data-selected-price>$57</b> per kit &middot; COA included</p>
+        <a class="btn btn-primary" href="#inquiry">Request quote</a>
       </div>
     </div>
   </section>

@@ -105,28 +105,34 @@
     apply();
   }
 
-  /* ---------- Product variant selection ---------- */
+  /* ---------- Product strength selection (radio rows) ---------- */
   var selection = null;
 
   function initVariants() {
     var root = $('[data-product]');
     if (!root) return;
-    var pills = $$('[data-variant]');
+    var radios = $$('input[data-variant]');
+    if (!radios.length) return;
     var strengthOut = $$('[data-variant-label]');
     var priceOut = $$('[data-variant-price]');
+    var summaryLabel = $$('[data-selected-label]');
+    var summaryPrice = $$('[data-selected-price]');
     var select = $('#inq-variant');
 
-    function selectVariant(btn) {
-      var label = btn.getAttribute('data-variant');
-      var price = btn.getAttribute('data-price') || '';
-      var perVial = btn.getAttribute('data-per-vial') || '';
+    function apply(radio) {
+      var label = radio.getAttribute('data-variant');
+      var price = radio.getAttribute('data-price') || '';
+      var perVial = radio.getAttribute('data-per-vial') || '';
       selection = label;
-      pills.forEach(function (p) {
-        var on = p === btn;
-        p.setAttribute('aria-pressed', String(on));
-        if (p.classList.contains('price-row')) p.style.background = on ? '#F2F8FD' : '';
+
+      radios.forEach(function (r) {
+        var row = r.closest('.vp-row');
+        if (row) row.classList.toggle('is-selected', r === radio);
       });
+
       strengthOut.forEach(function (el) { el.textContent = label; });
+      summaryLabel.forEach(function (el) { el.textContent = label; });
+      summaryPrice.forEach(function (el) { el.textContent = price; });
       priceOut.forEach(function (el) {
         el.textContent = price;
         var sub = el.parentElement && el.parentElement.querySelector('[data-per-vial]');
@@ -145,14 +151,15 @@
       }
     }
 
-    pills.forEach(function (btn) {
-      btn.addEventListener('click', function (e) {
-        if (btn.tagName === 'A') e.preventDefault();
-        selectVariant(btn);
+    radios.forEach(function (radio) {
+      radio.addEventListener('change', function () {
+        if (radio.checked) apply(radio);
       });
     });
 
-    if (pills.length) selectVariant(pills[0]);
+    var initial = radios.filter(function (r) { return r.checked; })[0] || radios[0];
+    initial.checked = true;
+    apply(initial);
   }
 
   /* ---------- Inquiry form: static-safe handoff ---------- */

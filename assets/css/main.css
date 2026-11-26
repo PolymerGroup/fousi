@@ -398,14 +398,59 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
 .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; padding: 0 1.1rem 1.1rem; }
 .table-wrap .price-table thead th { background: #fff; }
 
-.variant-row { display: flex; flex-wrap: wrap; gap: .45rem; margin: .2rem 0 1rem; }
-.variant-pill {
-  appearance: none; font: inherit; font-size: .82rem; font-weight: 600; cursor: pointer;
-  border: 1px solid var(--line-strong); background: #fff; color: var(--ink-2);
-  padding: .38rem .72rem; border-radius: 7px; font-variant-numeric: tabular-nums;
+/* strength picker: one clickable row per vial size, radio semantics */
+.variant-picker {
+  margin: 0; padding: 0; border: 1px solid var(--line); border-radius: var(--radius);
+  background: #fff; overflow: hidden; min-inline-size: 0;
 }
-.variant-pill:hover { border-color: var(--navy); color: var(--navy); }
-.variant-pill[aria-pressed="true"] { background: var(--navy); border-color: var(--navy); color: #fff; }
+.vp-head, .vp-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, .85fr) minmax(0, .6fr) 74px;
+  gap: 1rem; align-items: center; padding: .92rem 1.15rem;
+}
+.vp-head {
+  background: var(--soft); border-bottom: 1px solid var(--line-strong);
+  font-size: .7rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--muted);
+}
+.vp-row {
+  position: relative; border-bottom: 1px solid var(--line); cursor: pointer;
+  transition: background-color .15s ease, box-shadow .15s ease;
+}
+.vp-row:last-child { border-bottom: 0; }
+.vp-row:hover { background: #FAFCFE; }
+.vp-row input {
+  position: absolute; width: 1px; height: 1px; margin: 0; opacity: 0; pointer-events: none;
+}
+.vp-row:focus-within { outline: 2px solid var(--cyan); outline-offset: -2px; }
+.vp-row.is-selected { background: #F1F8FD; box-shadow: inset 3px 0 0 var(--navy); }
+.vp-name {
+  display: flex; align-items: center; gap: .65rem;
+  font-size: .95rem; font-weight: 650; color: var(--ink); font-variant-numeric: tabular-nums;
+}
+.vp-name::before {
+  content: ""; width: 16px; height: 16px; border-radius: 50%; flex: none;
+  border: 1.5px solid var(--line-strong); background: #fff;
+  transition: border .15s ease, box-shadow .15s ease;
+}
+.vp-row.is-selected .vp-name::before {
+  border-color: var(--navy); box-shadow: inset 0 0 0 4px var(--navy);
+}
+.vp-price { font-size: 1.02rem; font-weight: 750; color: var(--navy-deep); font-variant-numeric: tabular-nums; }
+.vp-price small { display: block; font-size: .69rem; font-weight: 500; color: var(--muted-2); margin-top: 1px; }
+.vp-unit { font-size: .9rem; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.vp-go {
+  justify-self: end; font-size: .74rem; font-weight: 700; letter-spacing: .04em;
+  text-transform: uppercase; color: var(--muted-2);
+}
+.vp-row.is-selected .vp-go { color: var(--navy); }
+.vp-go::after { content: "Select"; }
+.vp-row.is-selected .vp-go::after { content: "Selected"; }
+.vp-cta {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 1rem; margin-top: 1.1rem;
+}
+.vp-summary { margin: 0; font-size: .9rem; color: var(--muted); }
+.vp-summary b { color: var(--ink); }
 
 .pdp-body { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: clamp(2rem, 4vw, 3.6rem); align-items: start; }
 .prose h2 { font-size: 1.42rem; margin-top: 2.4rem; }
@@ -667,6 +712,13 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
   .hero-proof strong { font-size: 1.1rem; }
   .price-table { font-size: .84rem; }
   .price-table th, .price-table td { padding: .6rem .45rem; }
+  .vp-head { display: none; }
+  .vp-row { grid-template-columns: minmax(0, 1fr) auto; row-gap: .15rem; padding: .8rem .95rem; }
+  .vp-unit { grid-column: 1 / -1; font-size: .8rem; color: var(--muted); }
+  .vp-unit::before { content: "per vial "; }
+  .vp-go { display: none; }
+  .vp-cta { align-items: stretch; }
+  .vp-cta .btn { width: 100%; }
   .table-wrap { padding: 0 .7rem .7rem; }
   .stat-row { grid-template-columns: 1fr 1fr; }
   .cta-band { padding: 1.5rem; }
