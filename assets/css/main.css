@@ -477,7 +477,7 @@ NEW = r"""/* ---------- 11b. Buy box (product page configurator) ---------- */
 .hero-buy .buy-total span { display: block; font-size: .62rem; }
 .hero-buy .buy-total b { font-size: 1.45rem; }
 .hero-buy .buy-total small { font-size: .7rem; }
-.hero-buy-actions { display: flex; gap: .45rem; }
+.hero-buy-actions { display: flex; flex-wrap: wrap; gap: .45rem; }
 .hero-buy-actions .btn { padding: .68rem .9rem; font-size: .86rem; }
 .hero-buy .buy-status { margin: .7rem 0 0; font-size: .82rem; padding: .55rem .7rem; }
 .hero-note { margin-top: .85rem; }
@@ -531,7 +531,9 @@ NEW = r"""/* ---------- 11b. Buy box (product page configurator) ---------- */
   .hero-buy-bottom { flex-direction: column; align-items: stretch; gap: .7rem; }
   .hero-buy .buy-total { flex-direction: row; align-items: baseline; gap: .5rem; }
   .hero-buy .buy-total span { display: none; }
-  .hero-buy-actions .btn { flex: 1 1 auto; justify-content: center; }
+  .hero-buy-actions .btn-mail,
+  .hero-buy-actions .btn-wa { flex: 1 1 calc(50% - .25rem); justify-content: center; }
+  .hero-buy-actions .btn-primary { flex: 1 1 100%; justify-content: center; }
   .buy-total { flex-direction: row; align-items: baseline; gap: .6rem; }
   .buy-total b { font-size: 1.5rem; }
   .buy-actions .btn { flex: 1 1 100%; justify-content: center; }

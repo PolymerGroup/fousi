@@ -49,6 +49,9 @@ There is no backend, so the quote cart lives in the browser:
 - On a product page, the **Add to inquiry** box takes a strength + kit quantity and appends the line to
   `localStorage["peflag_inquiry_v1"]`. Adding the same compound at a different strength creates a second
   line; adding the same strength again increments its quantity.
+- The **Email** and **WhatsApp** buttons beside it open the buyer's own client with a message already
+  written — product, strength, kit count, listed price and page URL — so a buyer who does not want to use
+  the list can send a quote request in one click.
 - The header (desktop) and mobile bar show a live count; every page links to `/quote.html`.
 - `/quote.html` lists the lines with quantity steppers, per-line totals, a remove button and an estimated
   goods total (freight excluded). The form there builds **one** message covering every line and opens it

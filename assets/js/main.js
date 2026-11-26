@@ -210,6 +210,36 @@
         if (priceEl) priceEl.textContent = money(c.price);
         if (vialEl) vialEl.textContent = '$' + c.perVial + ' / vial';
       }
+      prefillChannels(c, n);
+    }
+
+    /* Email / WhatsApp: open the client with the current selection already written */
+    function prefillChannels(c, n) {
+      var name = box.getAttribute('data-name') || 'Research peptide';
+      var page = window.location.href;
+      var body = [
+        'Hello Peflag,',
+        '',
+        'I would like a quote for:',
+        'Product: ' + name,
+        'Strength: ' + c.label,
+        'Quantity: ' + n + (n === 1 ? ' kit' : ' kits') + ' (10 vials per kit)',
+        'Listed price: ' + money(c.price) + ' per kit',
+        '',
+        'Please confirm batch availability, the current COA and freight to my country.',
+        '',
+        'Page: ' + page
+      ].join('\n');
+      var subject = 'Quote request — ' + name + ' ' + c.label + ' × ' + n + (n === 1 ? ' kit' : ' kits');
+      var mail = $('[data-mail-quote]', box);
+      var wa = $('[data-wa-quote]', box);
+      if (mail) {
+        mail.href = 'mailto:' + SALES_EMAIL + '?subject=' + encodeURIComponent(subject) +
+          '&body=' + encodeURIComponent(body);
+      }
+      if (wa) {
+        wa.href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(body);
+      }
     }
 
     select.addEventListener('change', function () { refresh(); if (status) status.hidden = true; });
