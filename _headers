@@ -13,8 +13,6 @@
 /assets/img/*
   Cache-Control: public, max-age=2592000
 
-/*.html
-  Cache-Control: public, max-age=0, must-revalidate
 /sitemap.xml
   Content-Type: application/xml; charset=utf-8
 /llms.txt

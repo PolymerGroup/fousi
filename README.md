@@ -42,6 +42,20 @@ external fonts, no analytics, no CDN dependency. It is designed for GitHub → C
 Total transfer for a product page: **~29 KB gzipped** across 3 requests (HTML + CSS + JS). Product
 imagery is inline SVG, so there is no image request on the critical path.
 
+### URL scheme
+
+Cloudflare's static-asset router serves `/about` for `about.html` and 307s the `.html` form, so **every
+URL on the site is extensionless**: `/`, `/products/`, `/products/semaglutide`, `/quality-control`,
+`/about`, `/contact`, `/quote`, `/privacy`. Canonicals, `sitemap.xml`, `llms.txt`, JSON-LD `@id`/`url`
+values and every internal link use that form. `_redirects` 301s the legacy `.html` paths (and the short
+`/semaglutide`-style aliases) straight to the extensionless URL, so old links resolve in one hop.
+
+Local preview therefore needs a server that understands extensionless URLs:
+
+```powershell
+cd ../_peflag_build && python serve.py 8899
+```
+
 ## 1b. How the inquiry list works
 
 There is no backend, so the quote cart lives in the browser:
@@ -134,13 +148,12 @@ product pages say so explicitly.
 ## 5. Local preview
 
 ```powershell
-# from this folder
-python -m http.server 8899
+# from ../_peflag_build — mimics Cloudflare's extensionless routing
+python serve.py 8899
 # → http://127.0.0.1:8899/
 ```
 
-Opening `index.html` directly from disk works too, except the catalogue filter uses `history.replaceState`
-(guarded, so it fails silently).
+A plain `python -m http.server` will not resolve the extensionless links (`/about` etc.); use `serve.py`.
 
 ## 6. Rebuilding the pages
 
