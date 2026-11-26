@@ -677,6 +677,10 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+@media (min-width: 761px) {
+  /* keep the floating WhatsApp button clear of the legal links */
+  .footer-bottom { padding-right: 180px; }
+}
 @media print {
   .site-header, .topbar, .wa-float, .mobile-bar, .cta-band, .site-footer { display: none; }
   body { font-size: 11pt; }
