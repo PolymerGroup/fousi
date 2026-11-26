@@ -1,5 +1,6 @@
-# www -> apex, and short aliases for print / trade-show links
-https://www.peflag.com/* https://peflag.com/:splat 301!
+# Short aliases for print, quote documents and trade-show links.
+# NOTE: Cloudflare _redirects accepts relative URLs only. The www -> apex redirect
+# must be configured as a Redirect Rule in the Cloudflare dashboard (see README).
 /semaglutide /products/semaglutide.html 301
 /semaglutide/ /products/semaglutide.html 301
 /tirzepatide /products/tirzepatide.html 301

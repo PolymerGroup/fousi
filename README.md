@@ -169,8 +169,10 @@ Edit content in `data.py` / `notes.py` (copy, chemistry, prices) or `pages.py` (
    create the CNAME records Cloudflare shows.
 5. **TLS** — SSL/TLS → Overview → **Full (strict)**; Edge Certificates → **Always Use HTTPS** on;
    optionally enable HSTS (the `_headers` file already sends an HSTS header).
-6. **Redirects** — `_redirects` already 301s `www` to the apex and maps short aliases such as
-   `/retatrutide` to the product page for print and trade-show links.
+6. **Redirects** — `_redirects` maps short aliases such as `/retatrutide` to the product page for print and
+   trade-show links. Cloudflare accepts **relative URLs only** in that file, so the `www` → apex redirect is
+   not set there: add a **Redirect Rule** (Rules → Redirect Rules) for `www.peflag.com/*` →
+   `https://peflag.com/$1`, status 301, instead.
 7. **Verify** — open `https://peflag.com/`, `/products/`, one product page, `/quality-control.html`,
    `/robots.txt`, `/sitemap.xml`, `/llms.txt`. Confirm the browser shows no mixed content and the
    WhatsApp button opens `https://wa.me/8615866781826`.
