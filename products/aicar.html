@@ -58,6 +58,8 @@
       </a>
       <div class="nav-links"><a href="../index.html">Home</a><a href="../products/" aria-current="page">Metabolic Peptides</a><a href="../quality-control.html">Quality &amp; COA</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></div>
       <div class="nav-cta">
+        <a class="cart-link" href="../quote.html" aria-label="Open your inquiry list">Inquiry list
+          <span class="cart-count" data-cart-count data-empty="true">0</span></a>
         <a class="nav-phone" href="tel:+8615866781826">+86 158 6678 1826</a>
         <a class="btn btn-primary btn-sm" href="../contact.html#inquiry">Request a quote</a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
@@ -69,6 +71,8 @@
   <div id="mobile-nav" hidden style="border-top:1px solid var(--line);background:#fff">
     <div class="wrap" style="display:grid;gap:2px;padding-block:10px 16px">
       <a href="../index.html">Home</a><a href="../products/">Metabolic Peptides</a><a href="../quality-control.html">Quality &amp; COA</a><a href="../about.html">About</a><a href="../contact.html">Contact</a>
+      <a href="../quote.html" style="display:flex;align-items:center;gap:.5rem">Inquiry list
+        <span class="cart-count" data-cart-count data-empty="true">0</span></a>
       <a class="btn btn-wa btn-sm" style="margin-top:8px" href="https://wa.me/8615866781826?text=Hello%20Peflag%2C%20I%20would%20like%20a%20bulk%20quote%20for%20metabolic%20research%20peptides." rel="noopener">WhatsApp +86 158 6678 1826</a>
     </div>
   </div>
@@ -90,7 +94,7 @@
           <span class="tag tag--amber">Research use only</span>
         </div>
         <div class="btn-row" style="margin-top:1.4rem">
-          <a class="btn btn-primary" href="#inquiry">Request quote</a>
+          <a class="btn btn-primary" href="#configure">Request quote</a>
           <a class="btn btn-wa" href="https://wa.me/8615866781826?text=Hello%20Peflag%2C%20I%20would%20like%20bulk%20pricing%20for%20AICAR%20%2850%20mg%29." rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.3-.7.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4 2.5 1 3 .8 3.5.8.5-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.2-.2-.4-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> WhatsApp</a>
         </div>
         <p class="tiny" style="margin-top:.9rem">Replies within one business day · 1 kit (10 vials) minimum · T/T, Alipay or USDT accepted</p>
@@ -106,38 +110,56 @@
     </div>
   </section>
 
-  <section class="section section--tight" id="pricing">
+  <section class="section section--tight" id="configure">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">US pricing</p>
-        <h2>Every AICAR strength, priced per kit</h2>
-        <p class="lead">One kit contains 10 vials of lyophilized powder. Prices are USD per kit and include the batch
-        COA. Bulk tiers start at five kits; raw powder from 1 g is quoted per production batch.</p>
+        <p class="eyebrow">Add to inquiry</p>
+        <h2>Choose a strength and quantity</h2>
+        <p class="lead">Prices are per kit of 10 vials and include the batch COA. Add as many compounds as you need —
+        your inquiry list keeps them together and sends one message to our sales desk.</p>
       </div>
-      <fieldset class="variant-picker">
-        <legend class="sr-only">Choose a AICAR strength</legend>
-        <div class="vp-head" aria-hidden="true">
-          <span>Strength</span><span>Price per kit</span><span>Per vial</span><span></span>
+      <div class="buy-card" data-buy data-slug="aicar" data-name="AICAR" data-quote-url="../quote.html">
+        <div class="buy-grid">
+          <div class="field">
+            <label for="buy-strength">Strength</label>
+            <select id="buy-strength"><option value="50 mg" data-price="50" data-per-vial="5.00">50 mg &mdash; $50 / kit</option><option value="100 mg" data-price="86" data-per-vial="8.60">100 mg &mdash; $86 / kit</option></select>
+          </div>
+          <div class="field">
+            <label for="buy-qty">Quantity (kits)</label>
+            <div class="stepper">
+              <button type="button" data-step="-1" aria-label="Decrease quantity">&minus;</button>
+              <input id="buy-qty" type="number" min="1" max="999" step="1" value="1" inputmode="numeric" aria-label="Number of kits">
+              <button type="button" data-step="1" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+          <div class="buy-total">
+            <span>Line total</span>
+            <b data-buy-total>$50</b>
+            <small data-buy-unit>$5.00 / vial</small>
+          </div>
         </div>
-        <label class="vp-row is-selected">
-              <input type="radio" name="strength" value="50 mg" data-variant="50 mg" data-price="$50" data-per-vial="$5.00" checked>
-              <span class="vp-name">50 mg</span>
-              <span class="vp-price">$50<small>per kit</small></span>
-              <span class="vp-unit">$5.00</span>
-              <span class="vp-go" aria-hidden="true"></span>
-            </label><label class="vp-row">
-              <input type="radio" name="strength" value="100 mg" data-variant="100 mg" data-price="$86" data-per-vial="$8.60">
-              <span class="vp-name">100 mg</span>
-              <span class="vp-price">$86<small>per kit</small></span>
-              <span class="vp-unit">$8.60</span>
-              <span class="vp-go" aria-hidden="true"></span>
-            </label>
-      </fieldset>
-      <div class="vp-cta">
-        <p class="vp-summary">Selected: <b data-selected-label>50 mg</b> &middot;
-        <b data-selected-price>$50</b> per kit &middot; COA included</p>
-        <a class="btn btn-primary" href="#inquiry">Request quote</a>
+        <div class="buy-actions">
+          <button class="btn btn-primary" type="button" data-add-quote>Add to inquiry</button>
+          <a class="btn btn-wa" href="https://wa.me/8615866781826?text=Hello%20Peflag%2C%20I%20would%20like%20bulk%20pricing%20for%20AICAR%20%2850%20mg%29." rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.3-.7.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4 2.5 1 3 .8 3.5.8.5-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.2-.2-.4-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> WhatsApp</a>
+          <a class="btn btn-ghost" href="../quote.html">Inquiry list
+            <span class="cart-count" data-cart-count data-empty="true">0</span></a>
+        </div>
+        <p class="buy-status" data-buy-status hidden></p>
+        <p class="tiny" style="margin-top:.85rem">Minimum 1 kit &middot; tiered pricing from 5 kits &middot; raw powder
+        from 1 g quoted per production batch</p>
       </div>
+      <details class="price-ref">
+        <summary>Full price list — 2 strengths</summary>
+        <div class="table-wrap" style="border:0;border-top:1px solid var(--line);border-radius:0;margin:0">
+          <table class="price-table">
+            <caption class="sr-only">AICAR price list by strength</caption>
+            <thead>
+              <tr><th scope="col">Strength</th><th scope="col">Price per kit</th><th scope="col">Per vial</th></tr>
+            </thead>
+            <tbody><tr><td><strong>50 mg</strong></td><td class="p">$50</td><td class="num">$5.00</td></tr><tr><td><strong>100 mg</strong></td><td class="p">$86</td><td class="num">$8.60</td></tr></tbody>
+          </table>
+        </div>
+      </details>
     </div>
   </section>
 
@@ -253,11 +275,10 @@
     <div class="wrap">
       <div class="contact-grid">
         <div>
-          <p class="eyebrow">Inquiry</p>
-          <h2>Get a written quote for AICAR</h2>
-          <p class="lead">Choose a strength, add a quantity, and the form prepares a complete inquiry for email or
-          WhatsApp — including the compound, packaging and your contact details. Nothing is lost if you prefer to send
-          it yourself.</p>
+          <p class="eyebrow">Inquiry list</p>
+          <h2>Send one message for everything you need</h2>
+          <p class="lead">Your inquiry list keeps the compounds and quantities you have chosen, across products. Send it
+          once and we reply with the current batch COAs, tiered pricing and a freight quote for the whole consignment.</p>
           <ul class="glance" style="margin-top:1.4rem">
             <li><span class="k">Lead time, stocked kits</span><span class="v">24&ndash;48 h to dispatch</span></li>
             <li><span class="k">Express transit</span><span class="v">5&ndash;9 working days</span></li>
@@ -265,73 +286,13 @@
             <li><span class="k">Documentation</span><span class="v">COA · HPLC · MS · MSDS</span></li>
           </ul>
         </div>
-        <div>
-<div class="form-card" id="inquiry">
-  <h2 style="font-size:1.28rem">Request a bulk quote</h2>
-  <p class="sub">Tell us the compound, strength and quantity. We reply with price, current COA and shipping options within one business day.</p>
-  <form data-inquiry data-product="AICAR" novalidate>
-    
-    
-      <div class="field">
-        <label for="inq-variant">Strength / packaging</label>
-        <select id="inq-variant" name="variant"><option value="50 mg">50 mg</option><option value="100 mg">100 mg</option><option value="Bulk raw powder — 1 g">Bulk raw powder — 1 g</option><option value="Bulk raw powder — 5 g">Bulk raw powder — 5 g</option><option value="Bulk raw powder — 10 g">Bulk raw powder — 10 g</option><option value="Custom packaging / other">Custom packaging / other</option></select>
-      </div>
-    <div class="field-row">
-      <div class="field">
-        <label for="inq-qty">Quantity</label>
-        <input id="inq-qty" name="quantity" type="text" inputmode="numeric" placeholder="e.g. 5 kits" autocomplete="off">
-      </div>
-      <div class="field">
-        <label for="inq-country">Destination country</label>
-        <input id="inq-country" name="country" type="text" placeholder="e.g. Germany" autocomplete="country-name">
-      </div>
-    </div>
-    <div class="field-row">
-      <div class="field">
-        <label for="inq-name">Name</label>
-        <input id="inq-name" name="name" type="text" placeholder="Your name" autocomplete="name">
-      </div>
-      <div class="field">
-        <label for="inq-company">Company / institution</label>
-        <input id="inq-company" name="company" type="text" placeholder="Lab, CRO or distributor" autocomplete="organization">
-      </div>
-    </div>
-    <div class="field-row">
-      <div class="field">
-        <label for="inq-email">Email</label>
-        <input id="inq-email" name="email" type="email" placeholder="you@lab.org" autocomplete="email">
-      </div>
-      <div class="field">
-        <label for="inq-wa">WhatsApp <span class="hint">(optional)</span></label>
-        <input id="inq-wa" name="whatsapp" type="tel" placeholder="+1 555 000 0000" autocomplete="tel">
-      </div>
-    </div>
-    <div class="field">
-      <label for="inq-msg">Notes <span class="hint">(optional)</span></label>
-      <textarea id="inq-msg" name="message" rows="3" placeholder="Purity requirement, COA needs, target delivery date, labelling requirements&hellip;"></textarea>
-    </div>
-    <div class="form-error" data-form-error hidden role="alert"></div>
-    <button class="btn btn-primary btn-block" type="submit">Prepare inquiry &rarr;</button>
-    <p class="form-note">No account, no payment details. This form builds your inquiry locally and hands it to your
-    email client or WhatsApp &mdash; nothing is transmitted until you press send. Prefer to write directly?
-    <a href="mailto:info@peflag.com">info@peflag.com</a> or <a href="https://wa.me/8615866781826?text=Hello%20Peflag%2C%20I%20would%20like%20a%20bulk%20quote%20for%20metabolic%20research%20peptides." rel="noopener">WhatsApp</a>.</p>
-  </form>
-</div>
-<div class="form-success" data-success hidden>
-  <h3>Your inquiry is ready to send</h3>
-  <p>Choose one channel below. Email opens a pre-filled draft; WhatsApp opens the chat with the full text &mdash;
-  either way, the message reaches our sales desk with every detail intact.</p>
-  <div class="btn-row">
-    <a class="btn btn-primary" data-mailto href="mailto:info@peflag.com" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg> Send by email</a>
-    <a class="btn btn-wa" data-wa href="https://wa.me/8615866781826?text=Hello%20Peflag%2C%20I%20would%20like%20a%20bulk%20quote%20for%20metabolic%20research%20peptides." rel="noopener" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.3-.7.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4 2.5 1 3 .8 3.5.8.5-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.2-.2-.4-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Send on WhatsApp</a>
-    <button class="btn btn-ghost" type="button" data-copy="#inq-preview">Copy text</button>
-  </div>
-  <details style="margin-top:1rem">
-    <summary class="small" style="cursor:pointer">Preview the message</summary>
-    <pre id="inq-preview" data-message-preview style="white-space:pre-wrap;font-size:.78rem;background:#fff;border:1px solid #D9E7DC;border-radius:8px;padding:.8rem;margin-top:.6rem;color:#2C4A38"></pre>
-  </details>
-</div>
-</div>
+        <div class="form-card">
+          <h2 style="font-size:1.22rem">Your inquiry list</h2>
+          <p class="sub" data-cart-summary>No items yet — choose a strength above.</p>
+          <a class="btn btn-primary btn-block" href="../quote.html">Review &amp; send inquiry</a>
+          <a class="btn btn-wa btn-block" style="margin-top:9px" href="https://wa.me/8615866781826?text=Hello%20Peflag%2C%20I%20would%20like%20bulk%20pricing%20for%20AICAR%20%2850%20mg%29." rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.3-.7.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4 2.5 1 3 .8 3.5.8.5-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.2-.2-.4-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> WhatsApp sales</a>
+          <p class="tiny" style="margin-top:.85rem">+86 158 6678 1826 &middot; info@peflag.com</p>
+        </div>
       </div>
     </div>
   </section>
@@ -411,6 +372,7 @@
           <li><a href="../about.html">About Peflag</a></li>
           <li><a href="../quality-control.html">Quality &amp; COA</a></li>
           <li><a href="../contact.html">Contact &amp; quote</a></li>
+          <li><a href="../quote.html">Inquiry list</a></li>
           <li><a href="../privacy.html">Privacy policy</a></li>
         </ul>
       </div>
@@ -445,7 +407,8 @@
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.3-.7.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4 2.5 1 3 .8 3.5.8.5-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.2-.2-.4-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span class="label">WhatsApp us</span>
 </a>
 <div class="mobile-bar">
-  <a class="btn btn-ghost" href="../contact.html#inquiry">Get a quote</a>
+  <a class="btn btn-ghost" href="../quote.html">Inquiry list
+    <span class="cart-count" data-cart-count data-empty="true">0</span></a>
   <a class="btn btn-wa" href="https://wa.me/8615866781826?text=Hello%20Peflag%2C%20I%20would%20like%20a%20bulk%20quote%20for%20metabolic%20research%20peptides." rel="noopener">WhatsApp</a>
 </div>
 <script src="../assets/js/main.js" defer></script>

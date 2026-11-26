@@ -23,6 +23,7 @@ external fonts, no analytics, no CDN dependency. It is designed for GitHub → C
 ├── quality-control.html        HPLC/MS release criteria, COA anatomy, packaging, logistics
 ├── about.html                  Company, Jinan operations, compliance posture
 ├── contact.html                WhatsApp / email / phone / address + inquiry form
+├── quote.html                  Inquiry list: quantities, totals, one combined quote request
 ├── privacy.html                Privacy policy (no cookies, no tracking)
 ├── 404.html                    Not-found page (noindex)
 ├── sitemap.xml                 23 URLs, lastmod + priority
@@ -40,6 +41,22 @@ external fonts, no analytics, no CDN dependency. It is designed for GitHub → C
 
 Total transfer for a product page: **~29 KB gzipped** across 3 requests (HTML + CSS + JS). Product
 imagery is inline SVG, so there is no image request on the critical path.
+
+## 1b. How the inquiry list works
+
+There is no backend, so the quote cart lives in the browser:
+
+- On a product page, the **Add to inquiry** box takes a strength + kit quantity and appends the line to
+  `localStorage["peflag_inquiry_v1"]`. Adding the same compound at a different strength creates a second
+  line; adding the same strength again increments its quantity.
+- The header (desktop) and mobile bar show a live count; every page links to `/quote.html`.
+- `/quote.html` lists the lines with quantity steppers, per-line totals, a remove button and an estimated
+  goods total (freight excluded). The form there builds **one** message covering every line and opens it
+  in email or WhatsApp — nothing leaves the browser until the user presses send.
+- The catalogue filter and the inquiry list are independent: clearing the list only clears localStorage.
+
+If JS is unavailable, product pages still show the full price list and the WhatsApp button, and
+`/quote.html` falls back to its empty state with a link to the catalogue.
 
 ## 2. Product scope
 
