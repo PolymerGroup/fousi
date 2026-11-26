@@ -216,7 +216,8 @@
     /* Email / WhatsApp: open the client with the current selection already written */
     function prefillChannels(c, n) {
       var name = box.getAttribute('data-name') || 'Research peptide';
-      var page = window.location.href;
+      var canonical = document.querySelector('link[rel="canonical"]');
+      var page = (canonical && canonical.href) || window.location.href;
       var body = [
         'Hello Peflag,',
         '',
