@@ -688,6 +688,20 @@ NEW = r"""/* ---------- 11b. Buy box (product page configurator) ---------- */
 }
 .footer-disclaimer b { color: #A6BECF; }
 
+
+/* catalogue H1: keep on one line on laptops */
+.catalog-title { font-size: clamp(1.55rem, 1rem + 1.45vw, 2.3rem); white-space: nowrap; }
+@media (max-width: 900px) { .catalog-title { white-space: normal; } }
+
+/* three equal buttons in the dark CTA band */
+.cta-actions { display: grid; gap: .55rem; width: 100%; max-width: 270px; justify-self: end; }
+.cta-actions .btn { width: 100%; justify-content: center; padding: .8rem 1rem; }
+.btn-cta-mail { background: transparent; color: #fff; border: 1px solid rgba(255, 255, 255, .45); }
+.btn-cta-mail:hover { background: rgba(255, 255, 255, .12); border-color: #fff; color: #fff; }
+@media (max-width: 940px) {
+  .cta-actions { max-width: none; justify-self: stretch; }
+}
+
 /* ---------- 18. Floating WhatsApp + mobile bar ---------- */
 .wa-float {
   position: fixed; right: 22px; bottom: 22px; z-index: 80;
