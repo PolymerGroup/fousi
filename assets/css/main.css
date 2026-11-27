@@ -693,13 +693,28 @@ NEW = r"""/* ---------- 11b. Buy box (product page configurator) ---------- */
 .catalog-title { font-size: clamp(1.55rem, 1rem + 1.45vw, 2.3rem); white-space: nowrap; }
 @media (max-width: 900px) { .catalog-title { white-space: normal; } }
 
-/* three equal buttons in the dark CTA band */
-.cta-actions { display: grid; gap: .55rem; width: 100%; max-width: 270px; justify-self: end; }
-.cta-actions .btn { width: 100%; justify-content: center; padding: .8rem 1rem; }
+/* three compact, equal buttons in the dark CTA band */
+.cta-actions {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .45rem;
+  width: 100%; max-width: 420px; justify-self: end;
+}
+.cta-actions .btn {
+  width: 100%; justify-content: center; padding: .62rem .55rem;
+  font-size: .84rem; gap: .35rem;
+}
+.cta-actions .btn svg { width: 15px; height: 15px; }
 .btn-cta-mail { background: transparent; color: #fff; border: 1px solid rgba(255, 255, 255, .45); }
 .btn-cta-mail:hover { background: rgba(255, 255, 255, .12); border-color: #fff; color: #fff; }
+
 @media (max-width: 940px) {
-  .cta-actions { max-width: none; justify-self: stretch; }
+  .cta-band { grid-template-columns: 1fr; gap: 1.3rem; }
+  .cta-actions { max-width: none; justify-self: stretch; gap: .4rem; }
+  .cta-actions .btn { font-size: .78rem; padding: .58rem .35rem; min-height: 42px; }
+  .cta-actions .btn svg { width: 14px; height: 14px; }
+}
+@media (max-width: 380px) {
+  .cta-actions .btn { font-size: .72rem; }
+  .cta-actions .btn svg { display: none; }
 }
 
 /* ---------- 18. Floating WhatsApp + mobile bar ---------- */
