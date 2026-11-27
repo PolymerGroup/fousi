@@ -228,8 +228,41 @@ Edit content in `data.py` / `notes.py` (copy, chemistry, prices) or `pages.py` (
 
 - Never point a canonical, sitemap entry or schema URL at the Cloudflare preview host. Before each release,
   search every HTML file for the preview domain — the result must be empty.
-- Every new product page needs: unique copy, the spec panel, 6 FAQs, `Product` + `FAQPage` schema,
-  and an entry in `llms.txt` + `sitemap.xml` (both are generated).
+- Every new product page needs: unique copy (including three product-specific handling notes), the spec
+  panel with catalogue code, 4 FAQs, `Product` + `FAQPage` schema,
+  and an entry in `llms.txt`, `llms-full.txt` and `sitemap.xml` (all generated).
 - Keep the research-use disclaimer in the footer and the compliance strip on product pages.
 - No dosing guidance, no therapeutic claims, no human-use framing, no brand-name drug references.
 - Prices: change `cny` values in `data.py`, re-run `build.py`; never edit prices in the HTML.
+
+
+## 10. Host canonicalisation (must be done in Cloudflare, not in this repo)
+
+`_redirects` only accepts relative paths, so the www/http rules belong in
+**Cloudflare dashboard -> Rules -> Redirect Rules** (zone level), targeting `peflag.com`:
+
+| # | When | Then |
+|---|------|------|
+| 1 | `http.host eq "peflag.com"` | `301 https://peflag.com/${http.request.uri.path}` |
+| 2 | `http.host eq "www.peflag.com"` | `301 https://peflag.com${http.request.uri.path}` |
+
+Verify after saving:
+
+```powershell
+curl.exe -sS -o NUL -w "%{http_code} -> %{redirect_url}`n" http://peflag.com/
+curl.exe -sS -o NUL -w "%{http_code} -> %{redirect_url}`n" https://www.peflag.com/
+```
+
+Both must return a single `301` landing on `https://peflag.com/...`. No rule may point at
+`*.workers.dev` or `*.pages.dev`.
+
+## 11. Pages that must stay out of the index
+
+`/quote` is a per-user inquiry list with no standalone content: it carries `noindex,follow`, is absent from
+`sitemap.xml`, and must never be added to `llms.txt`. `/404` is `noindex` and carries no canonical.
+
+## 12. Comparison page
+
+`/compare` lists all 17 compounds in one semantic table (receptors, MW, half-life, kit price) plus two
+curated comparison tables and a 3-question FAQ. When a compound is added or a price changes, this page
+rebuilds automatically from `data.py`; no manual edit is needed.

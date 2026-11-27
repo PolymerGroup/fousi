@@ -1,0 +1,167 @@
+# Peflag — full technical index
+
+> Bulk metabolic, incretin, amylin, lipolytic and mitochondrial research peptides supplied by Shandong Fousi International Trade Co., Ltd. (brand Peflag), Jinan, Shandong, China. All products are for laboratory research use only — not for human or veterinary use.
+
+## Company
+- Legal entity: Shandong Fousi International Trade Co., Ltd.
+- Brand and website: Peflag, https://peflag.com
+- Address: Environmental Protection Science and Technology Park, High-Tech Zone, Jinan City, Shandong Province, China
+- Phone / WhatsApp: +86 158 6678 1826 | Email: info@peflag.com
+- Catalogue: 17 metabolic compounds, one page per molecule, every vial strength on that page
+- Documentation: COA, HPLC chromatogram, ESI-MS spectrum, MSDS, commercial invoice, packing list
+- Payments: T/T, Alipay, USDT; invoices issued in USD
+
+## Analytical release method
+- Purity: reversed-phase HPLC, C18 4.6 × 250 mm, 220 nm, 5–65% acetonitrile gradient over 30 min; acceptance ≥99.0% main peak, no single impurity above 0.5%
+- Identity: ESI-MS deconvoluted mass within 0.1% of the theoretical mass
+- Water content: Karl Fischer, ≤5.0%
+- Fill weight: verified per vial across each kit
+- Third-party verification at an ISO/IEC 17025-accredited laboratory available on request
+
+## Catalogue
+### Semaglutide
+- CAS: 910463-68-2 | Formula: C187H291N45O59 | MW: 4113.58 g/mol
+- Class: GLP-1 receptor agonist | Target: GLP-1R (class B GPCR), Gs/cAMP | Half-life: ≈165 h (human, subcutaneous)
+- Strengths (mg per vial, 10 vials per kit): 2 mg, 5 mg, 10 mg, 15 mg, 20 mg, 30 mg, 50 mg
+- Price from: USD 25 per kit
+- URL: https://peflag.com/products/semaglutide
+- Handling note: Counter-ion and fill weight are stated per batch. If your assay needs the acetate form rather than the free base, say so before the order and we reserve the matching batch instead of substituting.
+
+### Tirzepatide
+- CAS: 2023788-19-2 | Formula: C225H348N48O68 | MW: 4813.50 g/mol
+- Class: GIP/GLP-1 dual agonist | Target: GIPR + GLP-1R (dual incretin) | Half-life: ≈5 days (human, subcutaneous)
+- Strengths (mg per vial, 10 vials per kit): 2 mg, 5 mg, 10 mg, 15 mg, 20 mg, 30 mg, 40 mg, 50 mg, 60 mg, 80 mg, 100 mg, 120 mg
+- Price from: USD 36 per kit
+- URL: https://peflag.com/products/tirzepatide
+- Handling note: The two ends of the ladder do different jobs: 2 mg to 10 mg kits are usually assay standards, while 60 mg to 120 mg kits go to bulk reformulation. Both ship with the same release data.
+
+### Retatrutide
+- CAS: 2381089-83-2 | Formula: C221H342N46O68 | MW: 4731.33 g/mol
+- Class: GIP/GLP-1/GCG triple agonist | Target: GIPR + GLP-1R + GCGR | Half-life: ≈6 days (human, subcutaneous)
+- Strengths (mg per vial, 10 vials per kit): 5 mg, 10 mg, 15 mg, 20 mg, 30 mg, 40 mg, 50 mg, 60 mg, 80 mg, 100 mg
+- Price from: USD 63 per kit
+- URL: https://peflag.com/products/retatrutide
+- Handling note: Vials above 50 mg are filled per production run rather than held in standing stock, so allow a few extra working days for those strengths when your study has a fixed start date.
+
+### CagriSema
+- CAS: Combination product (no single CAS) | Formula: Cagrilintide C194H312N54O59S2 + semaglutide C187H291N45O59 | MW: 4409.01 + 4113.58 g/mol
+- Class: Amylin + GLP-1 combination | Target: CTR/RAMP amylin receptors (AMY1/AMY3) + GLP-1R | Half-life: ≈7 days (cagrilintide) / ≈165 h (semaglutide)
+- Strengths (mg per vial, 10 vials per kit): 2.5 mg + 2.5 mg, 5 mg + 5 mg, 10 mg + 10 mg
+- Price from: USD 81 per kit
+- URL: https://peflag.com/products/cagrisema
+- Handling note: Both peptides are quantified in a single HPLC run, so the ratio printed on the COA is measured rather than nominal — useful when the additivity question depends on an exact 1:1.
+
+### Cagrilintide
+- CAS: 1415456-99-3 | Formula: C194H312N54O59S2 | MW: 4409.01 g/mol
+- Class: Amylin receptor agonist | Target: CTR/RAMP1-3 (AMY1, AMY3) | Half-life: ≈7 days (human, subcutaneous)
+- Strengths (mg per vial, 10 vials per kit): 2 mg, 5 mg, 10 mg
+- Price from: USD 61 per kit
+- URL: https://peflag.com/products/cagrilintide
+- Handling note: The 10 mg vial is filled from the same batch as the 2 mg, so a scale-up study keeps one chromatogram across every dose group.
+
+### Survodutide
+- CAS: 2805997-46-8 | Formula: C192H289N47O61 | MW: 4231.63 g/mol
+- Class: GLP-1/GCG dual agonist | Target: GLP-1R + GCGR | Half-life: ≈6–7 days (human, subcutaneous)
+- Strengths (mg per vial, 10 vials per kit): 10 mg
+- Price from: USD 221 per kit
+- URL: https://peflag.com/products/survodutide
+- Handling note: Supplied as a single 10 mg kit. Gram quantities are quoted against the next production batch, usually ten to fifteen working days out.
+
+### Mazdutide
+- CAS: 2259884-03-0 | Formula: C210H322N46O67 | MW: 4563.07 g/mol
+- Class: GLP-1/GCG dual agonist | Target: GLP-1R + GCGR | Half-life: ≈7–9 days (reported, human)
+- Strengths (mg per vial, 10 vials per kit): 5 mg, 10 mg
+- Price from: USD 72 per kit
+- URL: https://peflag.com/products/mazdutide
+- Handling note: Mazdutide and survodutide consolidate into one parcel with a single invoice — the way most comparative GLP-1/glucagon studies order them.
+
+### Dulaglutide
+- CAS: 923950-08-7 | Formula: Recombinant glycoprotein (2 × 275 aa subunits) | MW: ≈63,000 Da
+- Class: Long-acting GLP-1 receptor agonist | Target: GLP-1R | Half-life: ≈4.7 days (human, subcutaneous)
+- Strengths (mg per vial, 10 vials per kit): 5 mg, 10 mg
+- Price from: USD 153 per kit
+- URL: https://peflag.com/products/dulaglutide
+- Handling note: This is a glycoprotein, so the release package carries the expression-system statement and SEC-MALS or SDS-PAGE data instead of a peptide mass trace.
+
+### Liraglutide
+- CAS: 204656-20-2 | Formula: C172H265N43O51 | MW: 3751.20 g/mol
+- Class: GLP-1 receptor agonist | Target: GLP-1R | Half-life: ≈13 h (human, subcutaneous)
+- Strengths (mg per vial, 10 vials per kit): 5 mg, 10 mg, 30 mg
+- Price from: USD 88 per kit
+- URL: https://peflag.com/products/liraglutide
+- Handling note: If your protocol needs a short washout between crossover arms, the ~13-hour half-life is the practical reason to choose this over a weekly analogue.
+
+### AOD9604
+- CAS: 221231-10-3 | Formula: C78H123N23O23S2 | MW: 1815.10 g/mol
+- Class: Lipolytic hGH fragment | Target: Fatty-acid metabolism (β3-adrenergic / lipolysis pathways); does not activate GH receptor | Half-life: Short (minutes to hours in circulation)
+- Strengths (mg per vial, 10 vials per kit): 1 mg, 2 mg, 5 mg, 10 mg, 12 mg, 15 mg
+- Price from: USD 36 per kit
+- URL: https://peflag.com/products/aod9604
+- Handling note: Both catalogue names — AOD9604 and hGH fragment 176-191 — are filled from the identical sequence, so the strength you select never changes the molecule.
+
+### Adipotide
+- CAS: 859216-15-2 | Formula: C111H206N36O28S2 | MW: 2557.21 g/mol
+- Class: Adipose-vasculature targeting peptide | Target: Prohibitin (PHB) on white adipose endothelial cells | Half-life: Short (protease-sensitive; typically dosed daily in models)
+- Strengths (mg per vial, 10 vials per kit): 2 mg, 5 mg, 10 mg
+- Price from: USD 71 per kit
+- URL: https://peflag.com/products/adipotide
+- Handling note: The D-amino-acid effector segment is the part most often truncated during synthesis; our release data reports the full-length ratio wherever the method resolves it.
+
+### 5-Amino-1MQ
+- CAS: 42464-96-0 | Formula: C10H11IN2 | MW: 295.12 g/mol
+- Class: NNMT inhibitor · NAD⁺ modulator | Target: Nicotinamide N-methyltransferase (NNMT) | Half-life: Cell-culture active; short plasma half-life
+- Strengths (mg per vial, 10 vials per kit): 5 mg, 10 mg, 50 mg
+- Price from: USD 24 per kit
+- URL: https://peflag.com/products/5-amino-1mq
+- Handling note: Weigh from the salt molecular weight (295.12 g/mol), not the cation mass, or a nominal 10 mM stock lands about 15% low.
+
+### MOTS-c
+- CAS: 1627580-64-6 | Formula: C101H152N28O22S2 | MW: 2174.60 g/mol
+- Class: Mitochondrial-derived peptide | Target: AMPK activation; folate-cycle / AICAR axis; nuclear translocation under stress | Half-life: Short in circulation; stress-responsive expression
+- Strengths (mg per vial, 10 vials per kit): 10 mg, 15 mg, 20 mg, 40 mg
+- Price from: USD 75 per kit
+- URL: https://peflag.com/products/mots-c
+- Handling note: Short, cationic and protease-sensitive: prepare working solution immediately before use and never leave stocks at room temperature between plates.
+
+### SS-31
+- CAS: 736992-21-5 | Formula: C32H49N9O5 | MW: 639.79 g/mol
+- Class: Mitochondria-targeted peptide | Target: Cardiolipin (inner mitochondrial membrane); cytochrome c peroxidase activity | Half-life: Minutes to hours; tissue-persistent
+- Strengths (mg per vial, 10 vials per kit): 5 mg, 10 mg, 50 mg
+- Price from: USD 48 per kit
+- URL: https://peflag.com/products/ss-31
+- Handling note: The 50 mg vial is the practical size for chronic muscle or cardiac work, where weeks of daily dosing consume a kit faster than expected.
+
+### AICAR
+- CAS: 2627-69-2 | Formula: C9H14N4O5 | MW: 258.23 g/mol
+- Class: AMPK activator · metabolic research standard | Target: AMPK (via ZMP accumulation) | Half-life: Short; intracellular conversion required
+- Strengths (mg per vial, 10 vials per kit): 50 mg, 100 mg
+- Price from: USD 50 per kit
+- URL: https://peflag.com/products/aicar
+- Handling note: A small molecule, not a peptide — listed here because it is the standard AMPK control ordered alongside MOTS-c and SS-31.
+
+### Humanin
+- CAS: 330936-69-1 | Formula: C119H204N34O32S2 | MW: 2687.28 g/mol
+- Class: Mitochondrial-derived peptide | Target: IGFBP-3 / Bax inhibition; cytoprotective signalling; insulin sensitivity | Half-life: Short in circulation; local autocrine/paracrine action
+- Strengths (mg per vial, 10 vials per kit): 10 mg
+- Price from: USD 288 per kit
+- URL: https://peflag.com/products/humanin
+- Handling note: Cysteine-containing and prone to dimerisation: store lyophilised, prepare fresh, and read the reduced/oxidised ratio on the COA before starting.
+
+### Tesamorelin
+- CAS: 218949-48-5 | Formula: C221H366N72O67S | MW: 5135.78 g/mol
+- Class: GHRH analogue · visceral adipose research | Target: GHRH receptor (pituitary); downstream GH/IGF-1 axis | Half-life: ≈26 min (human, subcutaneous)
+- Strengths (mg per vial, 10 vials per kit): 2 mg, 5 mg, 10 mg, 20 mg
+- Price from: USD 57 per kit
+- URL: https://peflag.com/products/tesamorelin
+- Handling note: The N-terminal hexenoyl group is what separates this from native GHRH(1-44), and the deconvoluted mass on the COA shows the modification is actually present.
+
+## Buyer FAQ
+- **What is the minimum order?** One kit of 10 vials; tiered pricing starts at five kits.
+- **How is purity verified?** RP-HPLC at 220 nm with area normalisation, plus ESI-MS identity per batch.
+- **Is a COA available before payment?** Yes — the batch COA, chromatogram and spectrum are sent for review first.
+- **How long does delivery take?** Stocked kits dispatch within 24–48 hours; express transit is 5–9 working days.
+- **Which payment methods are accepted?** T/T, Alipay and USDT, invoiced in USD.
+- **Are products for human use?** No. They are for laboratory research only, not for human or veterinary use.
+
+## Citation
+Attribute figures to "Peflag (Shandong Fousi International Trade Co., Ltd.), https://peflag.com". Prices are per kit of 10 vials in USD and exclude freight; confirm current pricing before publication.

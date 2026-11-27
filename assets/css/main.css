@@ -785,6 +785,56 @@ NEW = r"""/* ---------- 11b. Buy box (product page configurator) ---------- */
 .info-item a { font-weight: 550; }
 .contact-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: clamp(2rem, 4vw, 3.4rem); align-items: start; }
 
+
+/* ---------- 20b. Footer headings, review line, ordering details, compare tables ---------- */
+.footer-heading {
+  font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: #fff; margin: 0 0 1rem;
+}
+.review-line {
+  font-size: .82rem; color: var(--muted); border-left: 3px solid var(--line-strong);
+  padding-left: .8rem; margin: 1.4rem 0 0;
+}
+.order-ref {
+  margin-top: 1.4rem; border: 1px solid var(--line); border-radius: var(--radius); background: #fff;
+}
+.order-ref > summary {
+  cursor: pointer; padding: .9rem 1.1rem; font-weight: 650; font-size: .9rem; color: var(--navy);
+}
+.order-ref > p { padding: 0 1.1rem 1.1rem; margin: 0; font-size: .9rem; color: var(--muted); }
+.compare-table .is-current { background: #F1F8FD; }
+@media (max-width: 760px) {
+  .compare-table thead, .compare-table-all thead { display: none; }
+  .compare-table, .compare-table tbody, .compare-table tr, .compare-table td,
+  .compare-table-all, .compare-table-all tbody, .compare-table-all tr, .compare-table-all td {
+    display: block; width: 100%;
+  }
+  .compare-table tr, .compare-table-all tr {
+    border: 1px solid var(--line); border-radius: 12px; background: #fff;
+    margin: 0 0 .7rem; padding: .5rem .85rem;
+  }
+  .compare-table td, .compare-table-all td {
+    border: 0 !important; padding: .32rem 0; min-width: 0 !important; white-space: normal;
+  }
+  .compare-table td::before, .compare-table-all td::before {
+    content: attr(data-label); display: block; font-size: .66rem; letter-spacing: .09em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: .1rem;
+  }
+  .compare-table td:first-child, .compare-table-all td:first-child { padding-top: 0; }
+  .compare-table td:first-child::before, .compare-table-all td:first-child::before { display: none; }
+}
+
+.compare-table td, .compare-table-all td { font-size: .86rem; }
+.compare-table-all th, .compare-table-all td { white-space: normal; vertical-align: top; }
+.compare-table-all td:nth-child(1) { min-width: 210px; }
+.compare-table-all td:nth-child(2) { min-width: 230px; }
+.compare-table-all td:nth-child(4) { min-width: 150px; }
+.compare-table-all td:nth-child(5) { white-space: nowrap; }
+@media (max-width: 760px) {
+  .compare-table-all td:nth-child(1), .compare-table-all td:nth-child(2),
+  .compare-table-all td:nth-child(4) { min-width: 0; }
+}
+
 /* ---------- 21. Responsive ---------- */
 @media (max-width: 1180px) {
   .nav-links { gap: 1.05rem; }
