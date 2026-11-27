@@ -695,11 +695,11 @@ NEW = r"""/* ---------- 11b. Buy box (product page configurator) ---------- */
 
 /* three compact, equal buttons in the dark CTA band */
 .cta-actions {
-  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .45rem;
-  width: 100%; max-width: 420px; justify-self: end;
+  display: grid; grid-template-columns: 1fr; gap: .4rem;
+  width: 100%; max-width: 215px; justify-self: end;
 }
 .cta-actions .btn {
-  width: 100%; justify-content: center; padding: .62rem .55rem;
+  width: 100%; justify-content: center; padding: .55rem .8rem;
   font-size: .84rem; gap: .35rem;
 }
 .cta-actions .btn svg { width: 15px; height: 15px; }
@@ -708,7 +708,10 @@ NEW = r"""/* ---------- 11b. Buy box (product page configurator) ---------- */
 
 @media (max-width: 940px) {
   .cta-band { grid-template-columns: 1fr; gap: 1.3rem; }
-  .cta-actions { max-width: none; justify-self: stretch; gap: .4rem; }
+  .cta-actions {
+    max-width: none; justify-self: stretch; gap: .4rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .cta-actions .btn { font-size: .78rem; padding: .58rem .35rem; min-height: 42px; }
   .cta-actions .btn svg { width: 14px; height: 14px; }
 }
