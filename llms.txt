@@ -16,6 +16,8 @@ Key facts for citation:
 ## Core pages
 - [Home](https://peflag.com/): overview of the metabolic peptide portfolio, QC standards and inquiry process.
 - [Metabolic peptide catalogue](https://peflag.com/products/): all 17 compounds, filterable by GLP-1, GIP, glucagon, amylin, mitochondrial and lipolytic mechanism.
+- [Compare peptides](https://peflag.com/compare): all 17 compounds side by side on receptors, molecular weight, half-life and kit price.
+- [Full technical index](https://peflag.com/llms-full.txt): long-form machine index with every product and method.
 - [Quality control & COA](https://peflag.com/quality-control): HPLC and ESI-MS release criteria, COA contents, sealed packing and customs documentation.
 - [About Peflag](https://peflag.com/about): company profile, procurement model and compliance posture.
 - [Contact](https://peflag.com/contact): WhatsApp, email, address, response times and inquiry form.
