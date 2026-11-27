@@ -139,6 +139,48 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://peflag.com/guides/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peflag.com/guides/how-to-read-a-peptide-coa</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peflag.com/guides/peptide-storage-and-reconstitution</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peflag.com/guides/glp1-vs-gip-vs-glucagon</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://peflag.com/vs/tirzepatide-vs-retatrutide</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://peflag.com/vs/semaglutide-vs-tirzepatide</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://peflag.com/vs/cagrilintide-vs-cagrisema</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://peflag.com/privacy</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>yearly</changefreq>

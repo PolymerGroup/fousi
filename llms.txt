@@ -41,6 +41,13 @@ Key facts for citation:
 - [Humanin](https://peflag.com/products/humanin): CAS 330936-69-1; C119H204N34O32S2; MW 2687.28 g/mol; strengths 10 mg; kit price from USD 288; Mitochondrial-derived peptide. Supplier: Shandong Fousi International Trade Co., Ltd.
 - [Tesamorelin](https://peflag.com/products/tesamorelin): CAS 218949-48-5; C221H366N72O67S; MW 5135.78 g/mol; strengths 2 mg, 5 mg, 10 mg, 20 mg; kit price from USD 57; GHRH analogue · visceral adipose research. Supplier: Shandong Fousi International Trade Co., Ltd.
 
+## Guides and comparisons
+- [How to read a peptide COA](https://peflag.com/guides/how-to-read-a-peptide-coa): batch number, HPLC purity, ESI-MS mass, water content, fill weight and red flags.
+- [Peptide storage and reconstitution](https://peflag.com/guides/peptide-storage-and-reconstitution): storage matrix, buffer choice, freeze-thaw limits.
+- [GLP-1 vs GIP vs glucagon](https://peflag.com/guides/glp1-vs-gip-vs-glucagon): what each receptor arm drives and which compound isolates it.
+- [Tirzepatide vs retatrutide](https://peflag.com/vs/tirzepatide-vs-retatrutide): dual GIP/GLP-1 against a triple agonist.
+- [Semaglutide vs tirzepatide](https://peflag.com/vs/semaglutide-vs-tirzepatide): single-incretin control against a dual comparator.
+- [Cagrilintide vs CagriSema](https://peflag.com/vs/cagrilintide-vs-cagrisema): single amylin analogue against a fixed 1:1 combination.
 ## Supplier summary
 - Manufacturer / supplier: Shandong Fousi International Trade Co., Ltd. — Jinan, Shandong, China
 - Catalogue size: 17 metabolic compounds, one page per molecule with every vial strength
